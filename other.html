@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title>YUI Demo</title>
-	
-	<style type="text/css" media="screen">
-		body {
-			font-family: Lucida Grande, "Arial";
-		}
-		
-		h1 {
-			font-size: 153.9%;
-		}
-		
-		h2 {
-			font-size: 123.1%;
-		}
-		
-	
-		#wrapper {
-			border: 1px  solid #CCC;
-			box-shadow: 1px 1px 3px #CCC;
-			width: 550px;
-			margin: auto;
-		}
-		
-		
-		#content {
-				padding: 20px;
-				width: 500px;
-				margin: auto;
-		}
-	</style>
-	
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Evil Pop Up Window</title>
+    
+    <style type="text/css" media="screen">
+        body {
+            font-family: Lucida Grande, "Arial";
+        }
+        
+        h1 {
+            font-size: 153.9%;
+        }
+        
+        h2 {
+            font-size: 123.1%;
+        }
+        
+    
+        #wrapper {
+            border: 1px  solid #CCC;
+            box-shadow: 1px 1px 3px #CCC;
+            width: 550px;
+            margin: auto;
+        }
+        
+        
+        #content {
+                padding: 20px;
+                width: 500px;
+                margin: auto;
+        }
+    </style>
+    
 
 </head>
 <body>
-	
-	<div id="wrapper">
-		<div id="content">
-			<h1>Content Demo</h1>
-				
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				
-		</div>
-	</div>
+    
+    <div id="wrapper">
+        <div id="content">
+            <h1>Content Demo</h1>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                
+        </div>
+    </div>
 
-	<script src="http://yui.yahooapis.com/2.9.0/build/yahoo/yahoo.js"></script>
-	<script src="http://yui.yahooapis.com/2.9.0/build/dom/dom-min.js"></script>
-	<script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
-	<script src="http://yui.yahooapis.com/2.9.0/build/element/element.js"></script>
-	<script src="./js/MyApp.js" type="text/javascript" charset="utf-8"></script>	
-	<script src="./js/MyApp/windowOpen.js" type="text/javascript" charset="utf-8"></script>		
-	
-	<script type="text/javascript" charset="utf-8">
-		YAHOO.util.Event.onDOMReady(function(){
-			if(window.opener){
-				window.resizeTo(600, document.body.clientHeight + 100);
-			}
-		});
-	</script>
-	
-	
-		<script src="./js/application.js" type="text/javascript" charset="utf-8"></script>	
+    <script src="http://yui.yahooapis.com/2.9.0/build/yahoo/yahoo.js"></script>
+    <script src="http://yui.yahooapis.com/2.9.0/build/dom/dom-min.js"></script>
+    <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+    <script src="http://yui.yahooapis.com/2.9.0/build/element/element.js"></script>
+    <script src="./js/MyApp.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="./js/MyApp/windowOpen.js" type="text/javascript" charset="utf-8"></script>        
+    
+    <script type="text/javascript" charset="utf-8">
+        YAHOO.util.Event.onDOMReady(function(){
+            if(window.opener){
+                window.resizeTo(600, document.body.clientHeight + 100);
+                window.opener.panda_variable = "This is a non-generic panda message.";
+            }
+        });
+    </script>
+    
+    
+        <script src="./js/application.js" type="text/javascript" charset="utf-8"></script>    
 </body>
 </html>
