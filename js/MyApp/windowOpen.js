@@ -39,7 +39,7 @@ MyApp.windowOpen = (function(){
 				newWin = window.open(href, title, 'height=200,width=550');
 				
 			}, element);
-		},
+		}
 		
 	}
 }());

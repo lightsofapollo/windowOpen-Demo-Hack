@@ -28,18 +28,11 @@
     
 <h1>Linking demo</h1>
 
-<ul>
-    <li>
-        <a href="./other.html" title="Window Open" data-resize-to="body" class="windowOpen popup">
-            Open In New Window: Google
-        </a>
-    </li>
-    <li>
-        <a href="javascript:alert(window.panda_variable);" title="Annoying Spam">
-            Click for spam
-        </a>
-    </li>
-</ul>
+<p><a href="./other.html" title="Window Open" data-resize-to="body" class="windowOpen popup">
+	Reopen Popup Window</p>
+
+<p><a href="javascript:alert(window.panda_variable);" title="Annoying Spam">
+	Click for spam</a></p>
 
 <script src="http://yui.yahooapis.com/2.9.0/build/yahoo/yahoo.js"></script>
 <script src="http://yui.yahooapis.com/2.9.0/build/dom/dom-min.js"></script>
@@ -48,9 +41,12 @@
 
 <script src="./js/MyApp.js" type="text/javascript" charset="utf-8"></script>
 <script src="./js/MyApp/windowOpen.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/MyApp/windowOnLoad.js" type="text/javascript" charset="utf-8"></script>
 <script src="./js/application.js" type="text/javascript" charset="utf-8"></script>
 
-<script type="text/javascript">window.panda_variable = "Generic panda fluffiness.";</script>
+<script type="text/javascript">
+	window.panda_variable = "Generic panda fluffiness.";
+</script>
 
 </body>
 </html>

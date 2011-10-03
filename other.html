@@ -53,21 +53,16 @@
 <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
 <script src="http://yui.yahooapis.com/2.9.0/build/element/element.js"></script>
 
-<script src="./js/MyApp.js" type="text/javascript" charset="utf-8"></script>    
-<script src="./js/MyApp/windowOpen.js" type="text/javascript" charset="utf-8"></script>        
-
 <script type="text/javascript" charset="utf-8">
     YAHOO.util.Event.onDOMReady(function()
     {
         if(window.opener)
         {
-            window.resizeTo(600, document.body.clientHeight + 100);
+            window.resizeTo(document.body.clientWidth+50, document.body.clientHeight + 100);
             window.opener.panda_variable = "This is a non-generic panda message.";
         }
     });
 </script>
-
-<script src="./js/application.js" type="text/javascript" charset="utf-8"></script>    
 
 </body>
 </html>
