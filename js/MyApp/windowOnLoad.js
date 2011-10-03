@@ -1,7 +1,6 @@
 MyApp.windowOnLoad = (function() {
     var Y = YAHOO;
     var Event = Y.util.Event;
-    var Element = Y.util.Element;
     var Dom = Y.util.Dom;
 
     return {

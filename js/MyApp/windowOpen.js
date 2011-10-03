@@ -19,10 +19,10 @@ MyApp.windowOpen = (function(){
         },
         
         initializeElements: function(windowClass){
-            var elements = Dom.getElementsByClassName(windowClass), i = 0, length, element;
+            var i=0, elements = Dom.getElementsByClassName(windowClass), i = 0, length, element;
             length = elements.length;
                         
-            for(var i = 0; i < length; i++){
+            for (i = 0; i < length; i++){
                 element = elements[i];
                 this.bindElement(element);
             }
@@ -41,5 +41,5 @@ MyApp.windowOpen = (function(){
             }, element);
         }
         
-    }
+    };
 }());
