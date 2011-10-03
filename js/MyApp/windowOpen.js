@@ -19,7 +19,7 @@ MyApp.windowOpen = (function(){
         },
         
         initializeElements: function(windowClass){
-            var i=0, elements = Dom.getElementsByClassName(windowClass), i = 0, length, element;
+            var elements = Dom.getElementsByClassName(windowClass), i = 0, length, element;
             length = elements.length;
                         
             for (i = 0; i < length; i++){
