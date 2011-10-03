@@ -22,7 +22,7 @@ MyApp.windowOnLoad = (function() {
           var result = false;
 
           try {
-              if (typeof poppedWindow == 'undefined') {
+              if (typeof poppedWindow === 'undefined') {
                   // Safari with popup blocker... leaves the popup window handle undefined
                   result = true;
               }
