@@ -53,7 +53,8 @@ MyApp.windowOnLoad = (function() {
 
         checkPopupStatus: function() {
             if(this.hasPopupBlocker(this.popup)) {
-                alert('Oh noez! There\'s no more fish!');
+                Dom.get('popup_blocked_msg').innerHTML = 'Please enable pop-ups for all panda-related '
+                    + 'sites and click the above link to open the next page.';
             }
         }
         
