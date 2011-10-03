@@ -43,9 +43,7 @@ MyApp.windowOnLoad = (function() {
               }
 
           } catch (err) {
-              if (console) {
-                 console.warn("Could not access popup window", err);
-              }
+              result = true;
           }
 
           return result;
