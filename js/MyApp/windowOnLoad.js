@@ -49,7 +49,7 @@ MyApp.windowOnLoad = (function() {
           }
 
           return result;
-		},
+        },
 
         checkPopupStatus: function() {
             if(this.hasPopupBlocker(this.popup)) {
