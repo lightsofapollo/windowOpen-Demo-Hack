@@ -7,6 +7,12 @@
     <style type="text/css" media="screen">
         body {
             font-family: Lucida Grande, "Arial";
+            border: 1px  solid #CCC;
+            box-shadow: 1px 1px 3px #CCC;
+            padding: 10px;
+            width: 650px;
+            margin: auto;
+            margin-top: 20px;
         }
         
         h1 {
@@ -16,53 +22,35 @@
         h2 {
             font-size: 123.1%;
         }
-        
-    
-        #wrapper {
-            border: 1px  solid #CCC;
-            box-shadow: 1px 1px 3px #CCC;
-            width: 960px;
-            margin: auto;
-            min-height: 900px;
-        }
-        
-        
-        #content {
-                padding: 10px;
-                width: 650px;
-                margin: auto;
-        }
     </style>
 </head>
 <body>
     
-    <div id="wrapper">
-        <div id="content">
-            <h1>Linking demo</h1>
-                <ul>
-                    
-                    <li>
-                        <a href="./other.html" title="Window Open" data-resize-to="body" class="windowOpen popup">
-                            Open In New Window: Google
-                        </a>
-                </li>
-                    
-                    <li>
-                        <a href="javascript:alert(window.panda_variable);" title="Annoying Spam">
-                            Click for spam
-                        </a>
-                </li>
-        </div>
-    </div>
+<h1>Linking demo</h1>
 
-    <script src="http://yui.yahooapis.com/2.9.0/build/yahoo/yahoo.js"></script>
-    <script src="http://yui.yahooapis.com/2.9.0/build/dom/dom-min.js"></script>
-    <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
-    <script src="http://yui.yahooapis.com/2.9.0/build/element/element.js"></script>
-    <script src="./js/MyApp.js" type="text/javascript" charset="utf-8"></script>    
-    <script src="./js/MyApp/windowOpen.js" type="text/javascript" charset="utf-8"></script>        
-    
-        <script src="./js/application.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript">window.panda_variable = "Generic panda fluffiness.";</script>
+<ul>
+    <li>
+        <a href="./other.html" title="Window Open" data-resize-to="body" class="windowOpen popup">
+            Open In New Window: Google
+        </a>
+    </li>
+    <li>
+        <a href="javascript:alert(window.panda_variable);" title="Annoying Spam">
+            Click for spam
+        </a>
+    </li>
+</ul>
+
+<script src="http://yui.yahooapis.com/2.9.0/build/yahoo/yahoo.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/dom/dom-min.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/element/element.js"></script>
+
+<script src="./js/MyApp.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/MyApp/windowOpen.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/application.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">window.panda_variable = "Generic panda fluffiness.";</script>
+
 </body>
 </html>
