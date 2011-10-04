@@ -21,7 +21,7 @@ MyApp.windowOnLoad = (function() {
 
         hasPopupBlocker: function(poppedWindow) {
           var result = false;
-               
+                                   
           try {
               if (typeof(poppedWindow) == 'undefined') {
                   // Safari with popup blocker... leaves the popup window handle undefined
@@ -34,7 +34,7 @@ MyApp.windowOnLoad = (function() {
                   // that the window has been closed before the test could be run.
                   result = false;               
               }
-              else if (poppedWindow && (poppedWindow.outerWidth || poppedWindow.YChildOpen)) {                  
+              else if (poppedWindow && window.YChildOpen) {                  
                   // This is the actual test. The client window should be fine.
                   result = false;
               }

@@ -59,8 +59,31 @@
     {
         if(window.opener)
         {
-            window.opener.YChildOpen = true;
+          
+          
+            var height = window.height;
             
+          
+            if(height === undefined && window.outerHeight !== undefined){
+              height = window.outerHeight;
+            }
+                        
+            if(height === undefined && document.body.clientHeight !== undefined){
+              height = document.body.clientHeight;
+            }
+            
+            window.opener.console.log(height);
+            
+            window.opener.YChildOpen = height;
+                        
+            //           
+            // if(window.outerHeight === undefined && )
+            // 
+            // alert('oh: ' + window.outerHeight);
+            // alert('height: ' + window.height);
+            // alert('body h: ' + document.body.clientHeight);            
+            
+
 
             window.resizeTo(document.body.clientWidth+50, document.body.clientHeight + 100);
             window.opener.panda_variable = "This is a non-generic panda message.";
