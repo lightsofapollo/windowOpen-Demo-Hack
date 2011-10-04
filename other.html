@@ -71,20 +71,9 @@
             if(height === undefined && document.body.clientHeight !== undefined){
               height = document.body.clientHeight;
             }
-            
-            window.opener.console.log(height);
-            
-            window.opener.YChildOpen = height;
                         
-            //           
-            // if(window.outerHeight === undefined && )
-            // 
-            // alert('oh: ' + window.outerHeight);
-            // alert('height: ' + window.height);
-            // alert('body h: ' + document.body.clientHeight);            
-            
-
-
+            window.opener.YChildOpen = height;
+               
             window.resizeTo(document.body.clientWidth+50, document.body.clientHeight + 100);
             window.opener.panda_variable = "This is a non-generic panda message.";
         }
