@@ -12,17 +12,18 @@ MyApp.windowOnLoad = (function() {
             Event.onDOMReady(function()
             {
                 self.popup = window.open('other.html', 'Title', 'height=200,width=550');
+
                 setTimeout(function(){
                     self.checkPopupStatus();
-                }, 1000);
+                }, 2000);
             });
         },
 
         hasPopupBlocker: function(poppedWindow) {
           var result = false;
-
+               
           try {
-              if (typeof poppedWindow == 'undefined') {
+              if (typeof(poppedWindow) == 'undefined') {
                   // Safari with popup blocker... leaves the popup window handle undefined
                   result = true;
               }
@@ -33,7 +34,7 @@ MyApp.windowOnLoad = (function() {
                   // that the window has been closed before the test could be run.
                   result = false;               
               }
-              else if (poppedWindow && poppedWindow.outerWidth) {                  
+              else if (poppedWindow && (poppedWindow.outerWidth || poppedWindow.YChildOpen)) {                  
                   // This is the actual test. The client window should be fine.
                   result = false;
               }

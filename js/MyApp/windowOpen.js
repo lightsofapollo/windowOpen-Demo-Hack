@@ -35,9 +35,14 @@ MyApp.windowOpen = (function(){
 						newWin,
 						title = this.title, 
 						classes = this.className;
-										
-				newWin = window.open(href, title, 'height=200,width=550');
+
+				newWin = window.open(href, title.replace(' ', ''), 'height=200,width=550');
 				
+				setTimeout(function(){
+				    MyApp.windowOnLoad.popup = newWin;
+            MyApp.windowOnLoad.checkPopupStatus();
+        }, 4000);
+							
 			}, element);
 		}
 		

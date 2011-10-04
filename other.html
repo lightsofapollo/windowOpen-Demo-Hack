@@ -59,6 +59,9 @@
     {
         if(window.opener)
         {
+            window.opener.YChildOpen = true;
+            
+
             window.resizeTo(document.body.clientWidth+50, document.body.clientHeight + 100);
             window.opener.panda_variable = "This is a non-generic panda message.";
         }
