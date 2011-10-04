@@ -15,7 +15,7 @@ MyApp.windowOnLoad = (function() {
 
                 setTimeout(function(){
                     self.checkPopupStatus();
-                }, 3000);
+                }, 50);
             });
         },
 
